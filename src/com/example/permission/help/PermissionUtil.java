@@ -221,10 +221,7 @@ public class PermissionUtil {
 	 */
 	public void request(@NonNull Activity activity, @NonNull String[] permissions,
 			PermissionOriginResultCallBack callBack) {
-		Log.i("android.os.Build.VERSION", String.valueOf(android.os.Build.VERSION.SDK_INT));
-//		if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.M) {
-//			return;
-//		}
+
 		if (!this.checkSituation(permissions, callBack)) {
 			return;
 		}
